@@ -79,6 +79,12 @@
             android:title="@string/settings.other_title">
 
         <CheckBoxPreference
+                android:title="@string/settings.clean_played_queue_title"
+                android:summary="@string/settings.clean_played_queue_summary"
+                android:key="cleanPlayedQueue"
+                android:defaultValue="false"/>
+
+        <CheckBoxPreference
                 android:title="@string/settings.scrobble_title"
                 android:summary="@string/settings.scrobble_summary"
                 android:key="scrobble"

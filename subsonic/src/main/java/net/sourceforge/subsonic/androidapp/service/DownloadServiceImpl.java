@@ -511,17 +511,28 @@ public class DownloadServiceImpl extends Service implements DownloadService {
     @Override
     public synchronized void next() {
         int index = getCurrentPlayingIndex();
+        DownloadFile song = getCurrentPlaying();
         if (index != -1) {
             play(index + 1);
+            if(Util.isCleanPlayedQueueEnabled(this)) {
+                if(getRepeatMode() == RepeatMode.OFF)
+                {
+                    remove(song);
+                }
+            }
         }
     }
 
     private void onSongCompleted() {
         int index = getCurrentPlayingIndex();
+        DownloadFile song = getCurrentPlaying();
         if (index != -1) {
             switch (getRepeatMode()) {
                 case OFF:
                     play(index + 1);
+                    if(Util.isCleanPlayedQueueEnabled(this)) {
+                        remove(song);
+                    }
                     break;
                 case ALL:
                     play((index + 1) % size());

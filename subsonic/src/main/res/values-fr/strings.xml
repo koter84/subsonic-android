@@ -165,6 +165,8 @@
     <string name="settings.cache_size_20000">20 Go</string>
     <string name="settings.cache_size_unlimited">Illimité</string>
     <string name="settings.other_title">Autres paramètres</string>
+    <string name="settings.clean_played_queue_title">Retirer morceau après jouer</string>
+    <string name="settings.clean_played_queue_summary">Supprimer des chansons de la liste de lecture après jouer</string>
     <string name="settings.scrobble_title">Scrobbler sur Last.fm</string>
     <string name="settings.scrobble_summary">N\'oubliez pas de configurer votre identifiant et mot de passe Last.fm sur votre serveur Subsonic</string>
     <string name="settings.hide_media_title">Masquer aux autres</string>

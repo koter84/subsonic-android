@@ -178,6 +178,8 @@
     <string name="settings.cache_size_20000">20 GB</string>
     <string name="settings.cache_size_unlimited">Unlimited</string>
     <string name="settings.other_title">Other settings</string>
+    <string name="settings.clean_played_queue_title">Clean Played Queue</string>
+    <string name="settings.clean_played_queue_summary">Remove songs from queue after playing them</string>
     <string name="settings.scrobble_title">Scrobble to Last.fm</string>
     <string name="settings.scrobble_summary">Remember to set up your Last.fm user and password on the Subsonic server</string>
     <string name="settings.hide_media_title">Hide from other</string>

@@ -111,6 +111,11 @@ public final class Util {
         editor.commit();
     }
 
+    public static boolean isCleanPlayedQueueEnabled(Context context) {
+        SharedPreferences prefs = getPreferences(context);
+        return prefs.getBoolean(Constants.PREFERENCES_KEY_CLEAN_PLAYED_QUEUE, false);
+    }
+
     public static boolean isScrobblingEnabled(Context context) {
         if (isOffline(context)) {
             return false;
