@@ -57,7 +57,8 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
     private ListPreference maxBitrateMobile;
     private ListPreference cacheSize;
     private EditTextPreference cacheLocation;
-    private ListPreference preloadCount;
+    private ListPreference preloadCountWifi;
+    private ListPreference preloadCountMobile;
     private ServerSettingsManager serverSettingsManager;
 
     @Override
@@ -71,7 +72,8 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
         maxBitrateMobile = (ListPreference) findPreference(Constants.PREFERENCES_KEY_MAX_BITRATE_MOBILE);
         cacheSize = (ListPreference) findPreference(Constants.PREFERENCES_KEY_CACHE_SIZE);
         cacheLocation = (EditTextPreference) findPreference(Constants.PREFERENCES_KEY_CACHE_LOCATION);
-        preloadCount = (ListPreference) findPreference(Constants.PREFERENCES_KEY_PRELOAD_COUNT);
+        preloadCountWifi = (ListPreference) findPreference(Constants.PREFERENCES_KEY_PRELOAD_COUNT_WIFI);
+        preloadCountMobile = (ListPreference) findPreference(Constants.PREFERENCES_KEY_PRELOAD_COUNT_MOBILE);
 
         // See FileUtil.getSubsonicDirectory() for details.
         cacheLocation.setEnabled(Build.VERSION.SDK_INT < 19);
@@ -248,7 +250,8 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
         maxBitrateMobile.setSummary(maxBitrateMobile.getEntry());
         cacheSize.setSummary(cacheSize.getEntry());
         cacheLocation.setSummary(cacheLocation.getText());
-        preloadCount.setSummary(preloadCount.getEntry());
+        preloadCountWifi.setSummary(preloadCountWifi.getEntry());
+        preloadCountMobile.setSummary(preloadCountMobile.getEntry());
 
         createServerSettings();
     }

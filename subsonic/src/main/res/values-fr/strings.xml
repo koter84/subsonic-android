@@ -121,7 +121,8 @@
     <string name="settings.server_username">Nom d\'utilisateur</string>
     <string name="settings.server_password">Mot de passe</string>
     <string name="settings.cache_title">Cache</string>
-    <string name="settings.preload">Morceaux à pré-charger</string>
+    <string name="settings.preload_wifi">Morceaux à pré-charger - Wi-Fi</string>
+    <string name="settings.preload_mobile">Morceaux à pré-charger - Mobile</string>
     <string name="settings.cache_size">Taille du cache</string>
     <string name="settings.cache_location">Emplacement du cache</string>
     <string name="settings.cache_location_error">Emplacement du cache invalide. Emplacement par défaut utilisé.</string>
