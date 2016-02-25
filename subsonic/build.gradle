@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 19
-        versionCode 59
-        versionName "4.4"
+        versionCode 60
+        versionName "4.5"
     }
 
     lintOptions {
@@ -29,7 +29,7 @@ android {
 
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
             signingConfig signingConfigs.release
         }
