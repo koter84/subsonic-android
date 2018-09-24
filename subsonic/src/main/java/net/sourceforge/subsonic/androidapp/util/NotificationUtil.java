@@ -161,7 +161,7 @@ public final class NotificationUtil {
         contentView.setTextViewText(R.id.notification_title, song.getTitle());
         contentView.setTextViewText(R.id.notification_artist, song.getArtist());
         contentView.setImageViewBitmap(R.id.notification_image, albumArt);
-        contentView.setImageViewResource(R.id.notification_playpause, playing ? R.drawable.media_pause : R.drawable.media_start);
+        contentView.setImageViewResource(R.id.notification_playpause, playing ? R.drawable.media_pause_blue : R.drawable.media_start_blue);
 
         Intent intent = new Intent("1");
         intent.setComponent(new ComponentName(context, DownloadServiceImpl.class));
@@ -199,7 +199,7 @@ public final class NotificationUtil {
         contentView.setTextViewText(R.id.notification_artist, song.getArtist());
         contentView.setTextViewText(R.id.notification_album, song.getAlbum());
         contentView.setImageViewBitmap(R.id.notification_image, albumArt);
-        contentView.setImageViewResource(R.id.notification_playpause, playing ? R.drawable.media_pause : R.drawable.media_start);
+        contentView.setImageViewResource(R.id.notification_playpause, playing ? R.drawable.media_pause_blue : R.drawable.media_start_blue);
 
         Intent intent = new Intent("1");
         intent.setComponent(new ComponentName(context, DownloadServiceImpl.class));
